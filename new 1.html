@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ilan Golan - Software Tester</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("https://picsum.photos/1920/1080");
+      background-size: cover;
+      background-position: center;
+      opacity: 0.6;
+      z-index: -1;
+      border-radius: 50%;
+      transform: translateZ(0);
+    }
+
+    .profile-pic {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      overflow: hidden;
+      border: 5px solid #fff;
+      border-radius: 50%;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .contact-info {
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+    }
+
+    .contact-info div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    .contact-info div span:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .tabs input[type="radio"] {
+      display: none;
+    }
+
+    .tabs label {
+      background-color: #f3f3f3;
+      border: none;
+      border-bottom: 5px solid #f3f3f3;
+      color: #555;
+      cursor: pointer;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .tabs label:hover {
+      background-color: #ddd;
+    }
+
+    .tabs input[type="radio"]:checked + label {
+      background-color: #008080;
+      border-bottom: 5px solid #fff;
+      color: #fff;
+    }
+
+    .tabs-content {
+      display: none;
+    }
+
+    .tabs input[type="radio"]:checked ~ .tabs-content {
+      display: block;
+    }
+
+    .education-list {
+      list-style-type: none;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    .education-list li {
+      margin-bottom: 10px;
+    }
+
+    .skills-list {
+      list-style-type: none;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    .skills-list li {
+      margin-bottom: 10px;
+    }
+
+    .experience-list {
+      list-style-type: none;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    .experience-list li {
+      margin-bottom: 10
+	 {
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profile-pic">
+      <img src="https://picsum.photos/1920/1080" alt="Profile picture">
+    </div>
+    <h1>Ilan Golan</h1>
+    <div class="contact-info">
+      <div>
+        <span class="icon">&#127968;</span>
+        <span>Kibbutz Ma'agan Michael,Israel</span>
+      </div>
+      <div>
+        <span class="icon">&#128231;</span>
+        <span>Ilan.Golan@plasson.com</span>
+      </div>
+      <div>
+        <span class="icon">&#128241;</span>
+        <span>(972) 546646101</span>
+      </div>
+      <div>
+        <span class="icon">&#127760;</span>
+        <span>linkedin.com/in/ilan-golan-386839278</span>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="tabs">
+      <input type="radio" name="tab" id="tab-education" checked>
+      <label for="tab-education">Education</label>    <!--The "for" attribute in element is used to associate the label with a form element by specifying the corresponding form element's "id" value, enabling interaction with the form element by clicking on the label-->
+      <div class="tabs-content" id="content-education">
+        <h2>Education</h2>
+        <ul class="education-list">
+          <li><strong>Hof HaCarmel School</strong>, Hof HaCarmel Regional Council</li>
+          <li><strong></strong></li>
+        </ul>
+      </div>
+
+      <input type="radio" name="tab" id="tab-contact">
+      <label for="tab-contact">Contact</label>
+      <div class="tabs-content" id="content-contact">
+        <h2>Contact</h2>
+        <ul>
+          <li><span class="icon">&#9989;</span>Kibbutz Maagan Michael,Israel</li>
+          <li><span class="icon">&#9989;</span>Ilan.Golan@plasson.com</li>
+          <li><span class="icon">&#9742;</span>972546646101</li>
+          <li><span class="icon">&#x1F4B8;</span>linkedin.com/in/ilan-golan</li>
+          <li><span class="icon">&#x1F4E8;</span>github.com/IG56</li>
+        </ul>
+      </div>
+
+      <input type="radio" name="tab" id="tab-skills">
+      <label for="tab-skills">Skills</label>
+      <div class="tabs-content" id="content-skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>HTML5</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>CSS</li>
+          <li>#C</li>
+          <li>Git</li>
+          <li>Agile Development</li>
+        </ul>
+      </div>
+
+      <input type="radio" name="tab" id="tab-experience">
+      <label for="tab-experience">Experience</label>
+      <div class="tabs-content" id="content-experience">
+        <h2>Experience</h2>
+        <ul class="experience-list">
+          <li><strong>Quality Assurance Tester</strong> | Automation College-Gal Matalon (Tel Aviv,Israel) | 2023</li>
+          <li><strong>3D Designer</strong> | Plasson-factory for a water transmission solution (Ma'agan Michael,Israel) | 2015-2023</li>
+          <li><strong>Director Of Operation</strong> | water desalination factory (Ma'agan Michael,Israel) | 2013-2015</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
