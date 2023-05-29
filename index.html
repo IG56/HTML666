@@ -7,7 +7,7 @@
     * {
       box-sizing: border-box;
     }
- 
+
     body {
       background-color: #f3f3f3;
       margin: 0;
@@ -29,7 +29,7 @@
       background-image: url("https://picsum.photos/1920/1080");
       background-size: cover;
       background-position: center;
-      opacity: 0.6;
+      opacity: 0.4;
       border-radius: 50%;
     }
 
@@ -104,6 +104,14 @@
     .tabs-content {
       display: none;
     }
+	
+	.tabs-content ul {
+      list-style-type: none;
+    }
+    
+	.tabs-content ul li {
+      margin-bottom: 10px;
+    }
 
     .tabs input[type="radio"]:checked ~ .tabs-content {
       display: block;
@@ -153,15 +161,15 @@
       </div>
       <div>
         <span class="icon">&#128231;</span>
-        <span>Ilan.Golan@plasson.com</span>
+        <a href="mailto:Ilan.Golan@plasson.com">Ilan.Golan@plasson.com</a>
       </div>
       <div>
         <span class="icon">&#128241;</span>
-        <span>(972) 546646101</span>
+        <a href="tel:+972546646101">(972) 546646101</a>
       </div>
       <div>
         <span class="icon">&#127760;</span>
-        <span>linkedin.com/in/ilan-golan-386839278</span>
+        <a href="https://linkedin.com/in/ilan-golan-386839278">linkedin.com/in/ilan-golan-386839278</a>
       </div>
     </div>
   </header>
@@ -169,12 +177,11 @@
   <section>
     <div class="tabs">
       <input type="radio" name="tab" id="tab-education" checked>
-      <label for="tab-education">Education</label>    <!--The "for" attribute in element is used to associate the label with a form element by specifying the corresponding form element's "id" value, enabling interaction with the form element by clicking on the label-->
+      <label for="tab-education">Education</label>    
       <div class="tabs-content" id="content-education">
         <h2>Education</h2>
         <ul class="education-list">
           <li><strong>Hof HaCarmel School</strong>, Hof HaCarmel Regional Council</li>
-          <li><strong></strong></li>
         </ul>
       </div>
 
@@ -220,21 +227,3 @@
   </section>
 </body>
 </html>
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
