@@ -48,7 +48,7 @@
       height: 100%;
       object-fit: cover;
     }
-
+	
     .contact-info {
       border-top: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
@@ -56,6 +56,11 @@
       justify-content: space-between;
       margin-bottom: 20px;
       padding: 10px 20px;
+    }
+    
+	.contact-item {
+      position: relative;
+      z-index: 1;
     }
 
     .contact-info div {
@@ -149,30 +154,30 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="profile-pic">
-      <img src="https://picsum.photos/1920/1080" alt="Profile picture">
+<header>
+  <div class="profile-pic">
+    <img src="https://picsum.photos/1920/1080" alt="Profile picture">
+  </div>
+  <h1>Ilan Golan</h1>
+  <div class="contact-info">
+    <div class="contact-item">
+      <span class="icon">&#127968;</span>
+      <a href="https://en.wikipedia.org/wiki/Ma%27agan_Michael">Kibbutz Ma'agan Michael,Israel</a>
     </div>
-    <h1>Ilan Golan</h1>
-    <div class="contact-info">
-      <div>
-        <span class="icon">&#127968;</span>
-        <span>Kibbutz Ma'agan Michael,Israel</span>
-      </div>
-      <div>
-        <span class="icon">&#128231;</span>
-        <a href="mailto:Ilan.Golan@plasson.com">Ilan.Golan@plasson.com</a>
-      </div>
-      <div>
-        <span class="icon">&#128241;</span>
-        <a href="tel:+972546646101">(972) 546646101</a>
-      </div>
-      <div>
-        <span class="icon">&#127760;</span>
-        <a href="https://linkedin.com/in/ilan-golan-386839278">linkedin.com/in/ilan-golan-386839278</a>
-      </div>
+    <div class="contact-item">
+      <span class="icon">&#128231;</span>
+      <a href="mailto:Ilan.Golan@plasson.com">Ilan.Golan@plasson.com</a>
     </div>
-  </header>
+    <div class="contact-item">
+      <span class="icon">&#128241;</span>
+      <a href="https://wa.me/972546646101">(972) 546646101</a>
+    </div>
+    <div class="contact-item">
+      <span class="icon">&#127760;</span>
+      <a href="https://linkedin.com/in/ilan-golan-386839278">linkedin.com/in/ilan-golan-386839278</a>
+    </div>
+  </div>
+</header>
 
   <section>
     <div class="tabs">
